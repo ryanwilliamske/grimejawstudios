@@ -1,5 +1,6 @@
+@import 'fonts';
 .container{
-    background-color: rgb(46, 45, 45);
+    background-color: rgba(46, 45, 45, 0.384);
     color: white;
     top: 0;
     position: fixed;
@@ -12,6 +13,9 @@
         margin: 0;
         // background-color: blue;
         flex-grow: 1;
+        h1{
+            font-family: $primary-font2;
+        }
     }
 
     .blank{
@@ -39,6 +43,7 @@
                     display: block;
                     text-decoration: none;
                     color: rgb(190, 184, 184);
+                    font-family: $primary-font;
                     padding: 8px;
                 }
                 a:hover{
