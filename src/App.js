@@ -7,9 +7,9 @@ import {
   Switch
 } from 'react-router-dom';
 import Home from './components/Home';
-import About from './components/About';
-import Beats from './components/Beats';
-import Account from './components/Account';
+import About from './components/pages/About';
+import Beats from './components/pages/Beats';
+import Account from './components/pages/Account';
 import Navbar from './components/Navbar';
 
 
