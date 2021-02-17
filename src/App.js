@@ -1,12 +1,33 @@
 // import logo from './logo.svg';
 import './App.scss';
-import Hero from './components/Hero';
+
+import React, { Component } from 'react';
+import {
+  Route,
+  Switch
+} from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Beats from './components/Beats';
+import Account from './components/Account';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <>
+    <Navbar />
+    <Switch>
+      <Route path='/' component={Home} exact></Route>
+      <Route path='/about' component={About}></Route>
+      <Route path='/beats' component={Beats}></Route>
+      <Route path='/account' component={Account}></Route>
+      <Route component={Error}></Route>
+    </Switch>
+    </>
+
+
+
   );
 }
 
