@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
+
 import React, { Component } from 'react';
 import {
   Route,
@@ -24,6 +25,9 @@ function App() {
       <Route component={Error}></Route>
     </Switch>
     </>
+
+
+
   );
 }
 
